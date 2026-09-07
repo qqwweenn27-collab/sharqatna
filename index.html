@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f766e"><meta name="description" content="شرقاطنا - دليل سواق الشرقاط">
+<title>شرقاطنا | دليل السواق</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="splash" class="splash"><div class="logo">ش</div><h1>شرقاطنا</h1><p>دليل سواق الشرقاط</p><span>جاري التحميل…</span></div>
+<header class="topbar"><div><h1>شرقاطنا</h1><p>سواق من منطقتنا .. يوصلك بأمان</p></div><a class="admin-link" href="admin.html">الإدارة</a></header>
+<main class="container">
+<section class="hero card"><div><span class="eyebrow">دليل سواق الشرقاط</span><h2>اختار السواق المناسب بسرعة</h2><p>ابحث حسب الاسم أو المنطقة أو نوع السيارة.</p></div><div class="stats"><b id="driverCount">0</b><span>سواق</span><b id="areaCount">0</b><span>منطقة</span><b id="carCount">0</b><span>نوع سيارة</span></div></section>
+<section class="filters card"><input id="search" placeholder="ابحث عن سائق…" autocomplete="off"><select id="areaFilter"><option value="">كل المناطق</option></select><select id="carFilter"><option value="">كل السيارات</option></select><select id="statusFilter"><option value="">كل الحالات</option><option value="active">متاح</option><option value="busy">مشغول</option></select><label><input id="outTrips" type="checkbox"> سفر خارج الشرقاط</label></section>
+<section><div class="section-head"><h2>السواق</h2><span id="resultCount">0</span></div><div id="drivers" class="grid"><div class="empty">جاري تحميل البيانات…</div></div></section>
+<section class="card register"><div><span class="eyebrow">أنت سائق؟</span><h2>سجّل نفسك في الدليل</h2><p>يتم إرسال الطلب للمراجعة قبل ظهوره للناس.</p></div><form id="requestForm" class="form-grid"><input name="name" required placeholder="الاسم الكامل"><input name="phone" required placeholder="رقم الهاتف"><input name="whatsapp" placeholder="واتساب (اختياري)"><select name="area_id" id="requestArea" required><option value="">اختر المنطقة</option></select><select name="car_type_id" id="requestCar" required><option value="">نوع السيارة</option></select><input name="car_model" placeholder="موديل السيارة"><input name="plate_number" placeholder="رقم اللوحة"><label><input name="out_trips" type="checkbox"> أقبل السفر خارج الشرقاط</label><textarea name="notes" placeholder="ملاحظات إضافية"></textarea><button type="submit">إرسال طلب التسجيل</button></form></section>
+</main>
+<div id="toast" class="toast"></div>
+<script type="module" src="app.js"></script>
+</body></html>
